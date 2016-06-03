@@ -1,5 +1,65 @@
 .wrap{
+	margin:20px;
+}
+
+.wrap div{
+	margin:20px;
 	width:100px;
 	height:100px;
-	background-color:#000;
 }
+.box1{
+	border:1px solid red;
+}
+.box1:hover{
+	border-color:green;	
+}
+
+.box2{
+	border:1px solid green;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.box3{
+	border:1px solid green;
+	border-radius:0;
+}
+
+.box4{
+	border:1px solid green;
+	border-radius:20px;
+}
+
+.box5{
+	border:1px solid green;
+	border-radius:50%;
+}
+
+.box6{
+	border:1px solid green;
+	-webkit-border-top-left-radius:20px;
+	-webkit-border-top-right-radius:0;
+	-webkit-border-bottom-left-radius:0;
+	-webkit-border-bottom-right-radius:20px;
+}
+
+.box7{
+	border:1px solid red;
+	/* 左上角, 右上角, 右下角, 左下角 */
+	-webkit-border-radius: 20px 0 30px 0;
+	border-radius: 20px 0 30px 0;
+}
+
+div.lemon {
+   width: 200px; 
+   height: 200px;
+   background: #F5F240;
+   border: 1px solid #F0D900;     
+   border-radius: 10px 150px 30px 150px;
+}
+
+div.leaf{
+	width:200px;
+	height:200px;
+}
+
