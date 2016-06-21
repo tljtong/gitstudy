@@ -1,54 +1,51 @@
 <!DOCTYPE html>
-  <!-- my_header -->
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app="myOfferApp">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta property="qc:admins" content="177137017565176652636" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>
-		gitdemo  border
-	</title>
-<link href="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="../css/gitdemo.css">
-<head>
+	<title>Document</title>
+	<style>
+		.first-circle{
+			border:2px solid #000;
+			background-color:red;
+			width:100px;
+			height:100px;
+			border-radius:50px;
+			position:relative;
+		}
+		.first-circle:before{
+			content:"";
+			background-color:#fff;
+			width:100px;
+			height:100px;
+			display:block;
+			border:2px solid red;
+			border-radius:50px;
+			position:absolute;
+			left:50px;
+		}
+		.first-circle:after{
+			content:"";
+			background-color:#fff;
+			width:100px;
+			height:100px;
+			display:block;
+			border:2px solid red;
+			border-radius:50px;
+			position:absolute;
+			left:50px;
+		}
+	</style>
+</head>
 <body>
-	<div class="wrap">
-		<div class="box1">
+	<div style="background-color:#ddd;">
+		<div>
+			<div class="first-circle">
+			</div>
+		</div>
+		
+		<div class="third-circle">
 			
 		</div>
-		<div class="box2">
-			
-		</div>
-		<div class="box3">
-			
-		</div>
-		<div class="box4">
-			
-		</div>
-		<div class="box5">
-			
-		</div>
-		<div class="box6">
-			
-		</div>
-		<div class="box7">
-			
-		</div>
-		<div class="lemon">
-			
-		</div>
-		<div class="leaf">
-			
-		</div>
-
 	</div>
-</body>
-<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
-<script src="http://cdn.bootcss.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
-<script src="../js/gitdemo.js"></script>
-
-<script>
-	
-</script>
 </body>
 </html>
