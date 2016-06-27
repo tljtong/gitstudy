@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WebGL Water</title>
+  <title>layout</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 
 	<style>
 		body,ul{
-			padding:0;
+			padding:0;ui
 			margin:0;
 		}
 		ul{
 			display:-webkit-box;
 			width:100%;
 		}
-		ul>li{
+		ul.ui-tiled>li{
 		display:-webkit-box;
 		-webkit-box-flex:1;
 		-webkit-box-orient:vertical;
@@ -49,6 +49,25 @@
 		}
 		.ui-flex-align-end{
 			-webkit-box-align:end;
+		}
+		.ui-flex-ver{
+			-webkit-box-orient:vertical;
+		}
+		.ui-row-flex{
+			display: -webkit-box;
+		    width: 100%;
+		    -webkit-box-sizing: border-box;
+		}
+		.ui-row-flex .ui-col{
+			float: none;
+		    -webkit-box-flex: 1;
+		    width: 0;
+		}
+		.ui-col{
+			padding: 5px;
+		    background: #777;
+		    text-align: center;
+		    box-sizing: border-box;
 		}
 	</style>
 </head>
@@ -100,8 +119,46 @@
 			下下
 		</div>
 	</div>
+	<div class="ui-flex ui-flex-ver ui-flex-pack-center ui-flex-align-start">
+	    <div>左中</div>
+	    <div>左中</div>
+	</div>
+	<div>
+		<ul class="ui-row-flex">
+			<li class="ui-col ui-flex ui-flex-pack-start">
+				<div>左</div>
+				<div>左</div>
+			</li>
+			<li class="ui-col ui-flex ui-flex-pack-center">
+				<div>中</div>
+				<div>中</div>
+			</li>
+			<li class="ui-col ui-flex ui-flex-pack-end">
+				<div>右</div>
+				<div>右</div>
+			</li>
+			<li class="ui-col ui-flex ui-flex-ver ui-flex-pack-end ui-flex-align-end">
+				<div>竖排右下</div>
+				<div>竖排右下</div>
+			</li>
+		</ul>
+	</div>
+	
 
- 	
+	<!-- layout 1 -->
+	<header class="ui-header ui-header-stable ui-border-b">
+    	<i class="ui-icon-return" onclick="history.back()"></i><h1>layout</h1><button class="ui-btn">回首页</button>
+	</header>
+	<footer class="ui-footer ui-footer-stable ui-border-t">
+	    <ul class="ui-tiled">
+	        <li><div>菜单</div><i>1</i></li>
+	        <li><div>菜单</div><i>2</i></li>
+	        <li><div>菜单</div><i>3</i></li>
+	    </ul>
+	</footer>
+	<section class="ui-container ui-center">
+	    内容
+	</section>
 </body>
 <script type="text/javascript">
 
