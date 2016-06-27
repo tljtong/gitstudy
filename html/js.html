@@ -25,10 +25,35 @@
 		li i{
 			font-style: normal;
 		}
+		.ui-flex{
+			border:1px solid #ddd;
+			margin-bottom:10px;
+			min-height: 80px;
+			display: -webkit-box;
+    		width: 100%;
+		}
+		.ui-flex-pack-start{
+			-webkit-box-pack:start;
+		}
+		.ui-flex-pack-center{
+			-webkit-box-pack:center;
+		}
+		.ui-flex-pack-end{
+			-webkit-box-pack:end;
+		}
+		.ui-flex-align-start{
+			-webkit-box-align:start;
+		}
+		.ui-flex-align-center{
+			-webkit-box-align:center;
+		}
+		.ui-flex-align-end{
+			-webkit-box-align:end;
+		}
 	</style>
 </head>
 <body>
-	<ul>
+	<ul class="ui-tiled">
 		<li>
 			<div>
 				菜单
@@ -54,6 +79,28 @@
 			</i>
 		</li>
 	</ul>
+
+	<div class="dom-content">
+		<div class="ui-flex ui-flex-pack-start">
+			 左左
+		</div>
+		<div class="ui-flex ui-flex-pack-center">
+			中中
+		</div>
+		<div class="ui-flex ui-flex-pack-end">
+			右右
+		</div>
+		<div class="ui-flex ui-flex-align-start">
+			上上
+		</div>
+		<div class="ui-flex ui-flex-align-center">
+			中中
+		</div>
+		<div class="ui-flex ui-flex-align-end">
+			下下
+		</div>
+	</div>
+
  	
 </body>
 <script type="text/javascript">
