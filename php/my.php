@@ -88,5 +88,101 @@
 				echo "<br/>";
 			}
 		?>
-		
+		<?php
+		  for($c =6;$c<=12;$c++){	
+		  	echo "现在$c 点";
+		  	if($c <=9){
+		  		echo "小童陪小君敲代码";
+		  	}else{
+		  		echo "小童睡觉去了，小君还在敲代码";
+		  	}
+		  	echo "<br/>";
+		  } 
+		?>
+		<?php
+			for($d = 5;$d<=12;$d++){
+				echo "现在 $d 点","现在小童还在敲代码";
+				echo "<br/>";
+				if($d == 8){
+					break;
+				}
+			} 
+			echo "循环结束，打完收工";
+			echo "<br/>";
+		?>
+		<?php
+			for($e = 5;$e<=12;$e++){
+				echo "现在$e 点";
+				if($e ==8){
+					echo "<br/>";
+					continue;
+				}
+				echo "小童在敲代码","<br/>";
+			} 
+		?>
+		<?php
+			for($f = 5;$f<=12;$f++){
+				echo "现在 $f 点";
+				if($f == 8){
+					echo "<br/>";
+					/*return;*/
+				}
+				echo "小童还在敲代码","<br/>";
+			} 
+			echo "循环结束，打完收工","<br/>"
+		?>
+		<?php
+			function sum ($a,$b) 
+			{ 
+				echo $a+$b; 
+			} 
+			sum(100,20); //开始调用该函数 	
+		?>
+		<?php
+			function king ($name,$age){
+				echo $name.$age;
+				echo "<br/>";
+			}
+			king("king","28");
+			king("hilda","18");
+		?>
+
+		<?php
+			function hilda(){
+				echo "king";
+			} 
+			hilda();
+			echo "<br/>";
+		?>
+		<?php 
+			function big($a,$b,$c){
+				$d = $a>$b?$a:$b;
+				$e = $d>$c?$d:$c;
+				echo "最大值是：",$e;
+				echo "<br/>";
+			}
+			big(1.1,0,-1);
+		?>
+		<?php 
+			function msg($name,$age,$sex = "男"){
+				echo "姓名：",$name, " 年龄 ：",$age," 性别 ：",$sex;
+				echo "<br/>";
+			}
+			msg("king",24);
+			msg("hilda",20,"女");
+			msg("tong",28,"未知");
+		?>
+		<?php 
+			function add($a,$b){
+				return $a + $b;
+			}
+			$c = add(12,20);
+			echo $c;
+			echo "<br/>";
+			echo add(add(4,3),5);
+		?>
+		<?php 
+			$arr = array('banana','apple','orange');
+			var_dump($arr);
+		?>
 	</p>
