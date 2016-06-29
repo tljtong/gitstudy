@@ -185,4 +185,15 @@
 			$arr = array('banana','apple','orange');
 			var_dump($arr);
 		?>
+		<?php
+			$arr1 = array('name'=>'星星','age'=>23);
+			var_dump($arr1);
+		?>
+		<?php
+			$arr2 = array('name'=>'月亮','age'=>23);
+			var_dump($arr2);
+			$arr2['name'] = '小青';
+			$arr2['age'] = 20;
+			var_dump($arr2);
+		?>
 	</p>
