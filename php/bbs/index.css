@@ -1,0 +1,39 @@
+#header{
+	height:100px;
+	background:#ffcc99;
+	text-align:center;
+	font-size:30px;
+}
+#user{
+	height:30px;
+	background:#ccff88;
+	text-align:right;
+}
+#power{
+	height:50px;
+	text-align:center;
+	background:#ccff00;
+}
+#module{
+	height:100px;
+	background:#449933;
+	text-align:center;
+	font-size:35px;
+}
+#post{
+	height:30px;
+	background:#fff;
+	text-align:center;	
+}
+#posttitle{
+	height:50px;
+	background:#554433;
+}
+#postdetail{
+	height:50px;
+	background:#445599;
+}
+#person{
+	height:100px;
+	background:#447799;
+}
